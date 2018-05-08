@@ -1,0 +1,25 @@
+<div layout="column" aria-label="Admin Form" ng-cloak class="md-inline-form">
+
+    <md-content layout-gt-sm="row" layout-padding>
+        <div>
+            <md-input-container>
+                <label>Nombre</label>
+                <input name="nombre" ng-model="DataForm.nombre" required>
+                <div ng-messages="add.nombre.$error" ng-if="add.nombre.$touched">
+                    <p ng-message="minlength">Your name is too short.</p>
+                    <p ng-message="maxlength">Your name is too long.</p>
+                    <p ng-message="required">Your name is required.</p>
+                </div>
+            </md-input-container>
+
+            <md-input-container>
+                <label>Identificacion</label>
+                <input type="text" name="identificacion" ng-model="DataForm.identificacion" required>
+            </md-input-container>
+
+            <md-input-container>
+                <md-button type="submit" class="md-raised md-primary">enviar</md-button>
+            </md-input-container>
+        </div>
+    </md-content>
+</div>
