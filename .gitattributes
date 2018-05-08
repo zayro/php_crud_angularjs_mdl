@@ -1,0 +1,10 @@
+# Archivos analizar
+./backend/* linguist-vendored=true
+
+# ignora lenguaje programacion
+*.html linguist-detectable=false
+*.js linguist-detectable=false
+
+# ignora porcentaje de codigo html
+*.html linguist-vendored=false
+*.js linguist-vendored=false
